@@ -4,6 +4,10 @@
 /* accent #18A0FB;*/
 /* цвет фона (primary background color) #ffffff;  */
 /* вторичный цвет фона(secondary background color) #F5F5F5; */
+/* 
+!font-family: 'Comfortaa', cursive;
+!font-family: 'Inter', sans-serif;
+!font-family: 'Montserrat', sans-serif; */
 
 :root {
 	--primery-text-color: rgba(0, 0, 0, 0.8);
@@ -12,9 +16,14 @@
 	--prymery-white-color: #ffffff;
 	--tittle-text-color: #000000;
 	--secondary-bg-color: grey;
+	--primery-bg-color: #ffffff;
 }
 
-.page {
+body {
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: -0.015em;
+	font-size: 18px;
+
 	color: var(--primery-text-color);
 	background-color: var(--prymery-white-color);
 }
@@ -30,11 +39,20 @@
 /* button */
 
 .button {
-	color: var(--tittle-text-color);
+	font-family: inherit;
+	letter-spacing: -0.015em;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.2;
+
 	background-color: var(--prymery-white-color);
 }
 
 .logo {
+	font-family: "Comfortaa", cursive;
+	font-size: 28px;
+	line-height: 1.14;
+	letter-spacing: -0.015em;
 	color: var(--secondary-text-color);
 }
 
@@ -46,7 +64,7 @@
 	color: var(--tittle-text-color);
 }
 
-.button.primary {
+.button.primery {
 	background-color: var(--prymery-white-color);
 	color: var(--accent-color);
 }
@@ -63,6 +81,11 @@
 }
 
 .header-nav .link {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.2;
+	letter-spacing: -0.015em;
+
 	color: var(--accent-color);
 }
 
@@ -71,17 +94,39 @@
 	color: var(--secondary-text-color);
 }
 
-.section .title {
+.section-title {
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 1.5;
+	letter-spacing: -0.015em;
+	text-align: center;
 	color: var(--tittle-text-color);
 }
 
 /* hero */
 
 .hero-title {
+	font-weight: 400;
+	font-size: 56px;
+	line-height: 1.43;
+	text-align: center;
+	letter-spacing: -0.015em;
 	color: var(--tittle-text-color);
 }
 
 /* Span */
+
+.span .title {
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: -0.015em;
+
+	color: var(--tittle-text-color);
+}
+
+.span-list .text {
+	line-height: 1.67;
+}
 
 .span .link {
 	color: var(--accent-color);
@@ -95,5 +140,23 @@
 /* Exempels */
 
 .exempels .title {
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: -0.015em;
 	color: var(--tittle-text-color);
+}
+
+/* Worklist */
+
+.section .after-title {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.39;
+	letter-spacing: -0.015em;
+}
+
+.work-list .title {
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: -0.015em;
 }
